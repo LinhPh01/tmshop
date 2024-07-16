@@ -6,7 +6,8 @@ import Itemicon from "./itemicon";
 import Listitems from "./listitems";
 import Blog from "./blog";
 import Recommend from "./recommend";
-import Oproducts from "./Oproducts";
+import Oproducts from "./oproducts";
+
 
 const IndexPage = () => {
   return (
@@ -21,7 +22,7 @@ const IndexPage = () => {
         </Suspense>
         <Blog />
         <Recommend />
-        <Oproducts />
+        <Oproducts/>
       </Box>
     </Page>
   );
