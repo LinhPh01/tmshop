@@ -1,1 +1,0 @@
-import{R as n}from"../../../react/index.js.fa086085.js";import{r as f}from"../../.10aede7d.js";var u=function t(s,a){a===void 0&&(a={});var e=[];return n.Children.forEach(s,function(r){r==null&&!a.keepEmpty||(Array.isArray(r)?e=e.concat(t(r)):f.exports.isFragment(r)&&r.props?e=e.concat(t(r.props.children,a)):e.push(r))}),e};export{u as t};

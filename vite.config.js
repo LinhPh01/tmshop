@@ -4,24 +4,26 @@ import react from "@vitejs/plugin-react";
 // https://vitejs.dev/config/
 export default () => {
   return defineConfig({
-    root: "./",
+     root: "./",
     base: "./",
     plugins: [react()],
     build: {
       outDir: 'build',
-      polyfillModulePreload:false,
+      polyfillModulePreload: false,
       rollupOptions: {
-      output:{
-        
-      manualChunks(id) {
-      if (id.includes('node_modules')) {
-      return id.toString().split('node_modules/')[1].split('./')[0].toString();
+        output: {
+          entryFileNames: 'app.js',
+          chunkFileNames: 'app-[hash].js',
+          assetFileNames: 'app-[hash][extname]',
+          manualChunks(id) {
+            if (id.includes('src/app.js')) {
+              return 'app'; // Tạo chunk cho file src/app.js
+            }
+          }
+        }
       }
-      }
-      }
-      }
-      }
-    
-
+    }
   });
+
+ 
 };
