@@ -1,0 +1,63 @@
+.page {
+  padding: 16px 16px 96px 16px;
+}
+
+.bg-page-color {
+  background-color: white;
+}
+.page-container {
+  display: flex;
+  flex-direction: column;
+  height: unset !important;
+  min-height: unset !important;
+}
+
+.zaui-header {
+  position: sticky;
+  background-color: white;
+}
+.zaui-header::after {
+  content: none;
+}
+.zaui-list-item {
+  cursor: pointer;
+}
+
+.section-container {
+  padding: 16px;
+  background: #ffffff;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.no-rounded {
+  border-radius: 0 !important;
+}
+
+.swiper-pagination.swiper-pagination-horizontal {
+  display: flex;
+  gap: 4px;
+  background: rgba(0, 0, 0, 0.2);
+  width: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 100px;
+  padding: 4px;
+  bottom: 12px;
+}
+
+.bottom-nav-item-active {
+  color: #0ebeb8;
+
+  /* Màu xanh dương khi được chọn */
+}
+.bottom-nav-icon-active {
+  color: #0ebeb8; /* Màu xanh dương khi icon được chọn */
+}
+.button-nav-item-active {
+  color: #0ebeb8;
+}
+
+.top-chong {
+  top: 80%;
+}
