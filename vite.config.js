@@ -16,7 +16,7 @@ export default () => {
           chunkFileNames: 'app-[hash].js',
           assetFileNames: 'app-[hash][extname]',
           manualChunks(id) {
-            if (id.includes('src/app.js')) {
+            if (id.includes('./src/app.js')) {
               return 'app'; // Tạo chunk cho file src/app.js
             }
           }
